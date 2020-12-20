@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+}
+
+.clearfix::after { 
+    content: '';
+    display: block; 
+    clear: both;
+}
+
+.header{
+    background-color: #141f40;
+    width: 400px;
+    height: 100px;
+}
+
+.footer{
+    background-color: #d98d30;
+    width: 400px;
+    height: 100px;
+}
+
+/*ここからコンテンツ*/
+
+.contents{
+    width: 400px;
+    height: 250px;
+}
+
+.left{
+    background-color: #80bfa8;
+    width: 150px;
+    height: 250px;
+    float: left;
+}
+
+.right{
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+
+    .right_top{
+        width: 250px;
+        height: 150px;
+    }
+
+        .right_top_left{
+        width: 150px;
+        height: 150px;
+        float: left;
+        }
+
+            .right_top_top-left{
+                background-color: #dbd400;
+                width: 150px;
+                height: 50px;
+            }
+
+            .right_top_bottom-left{
+                background-color: #0093b7;
+                width: 150px;
+                height: 100px;
+            }
+
+        .right_top_right{
+            background-color: #ff9e6b;
+            width: 100px;
+            height: 150px;
+            float: right;
+        }
+
+    .right_bottom{
+        background-color: #8c2727;
+        width: 250px;
+        height: 100px;
+        float: left;
+    }
