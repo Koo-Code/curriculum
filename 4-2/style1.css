@@ -1,0 +1,65 @@
+body{
+    font-family: "游ゴシック";
+}
+
+
+/*mainのテーブル用*/
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(230, 230, 230);
+}
+
+table th, table td {
+    border: solid 1px grey;
+    padding: 10px 50px;
+
+}
+
+
+/*各ページのボタン用*/
+.login,.books_register,.forSignupPage,.signup,.logout,.delete,.forLoginPage{
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+.logout,.delete,.forLoginPage{
+    padding: 5px 10px;
+}
+
+.delete{
+    background: #e23636;
+}
+
+.logout{
+    background: #545555;
+}
+
+.forLoginPage{
+    background: #418bfa;
+    font-size: small;    
+}
+
+.forSignupPage{
+    background: #09a598;
+    padding: 5px 15px;
+    font-size: small;
+}
+
+.login,.signup,.books_register{
+    background: #418bfa;
+    padding: 5px 50px;
+}
+
+
+.a{
+    display: inline;
+    padding-right: 20px;
+}
+
