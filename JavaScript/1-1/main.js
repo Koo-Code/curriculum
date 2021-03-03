@@ -1,8 +1,4 @@
 window.alert("Hello World!!");
-//aaaa
-/*
-aaa
-*/
 
 console.log("10+8");
 console.log(10+8);
