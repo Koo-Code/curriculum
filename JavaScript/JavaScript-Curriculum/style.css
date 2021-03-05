@@ -1,0 +1,34 @@
+body{
+    margin: 0px;
+}
+
+.top {
+    width: 100%;
+    height: 20vh;
+    background-color:blue;
+    transition: all 5s ease;
+  }
+  .middle {
+    width: 100%;
+    height: 20vh;
+    background-color:yellow;
+    transition: all 2s ease;
+  }
+  .bottom {
+    width: 100%;
+    height: 20vh;
+    background-color:red;
+    transition: all 1s ease;
+  }
+  .top:hover {
+    width: 0;
+    transition: all 5s ease;
+  }
+  .middle:hover {
+    width: 0;
+    transition: all 3s ease;
+  }
+  .bottom:hover {
+    width: 0;
+    transition: all 1s ease;
+  }
