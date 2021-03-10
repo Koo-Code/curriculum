@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <select id="select_Lang" onchange="changeLang()">
+        <option>選択してください</option>
+        <option>日本語</option>
+        <option>English</option>
+        <option>全て表示</option>
+    </select>
+
+    <table>
+        <tr class="jpn">
+            <th>日本</th>
+            <td>こんにちは</td>
+            <td>ありがとう</td>
+            <td>さようなら</td>
+        </tr>
+
+        <tr class="en">
+            <th>English</th>
+            <td>Hello</td>
+            <td>Thank you</td>
+            <td>Good bye</td>
+        </tr>
+    </table>
+
+    <script>
+
+        let a = document.getElementById("select_Lang");
+        let en = document.querySelector(".en");
+        let jpn = document.querySelector(".jpn");
+
+        function changeLang(){
+            if (a.selectedIndex == 1){
+                jpn.style.display = "";
+                en.style.display = "none";
+                
+            }else if (a.selectedIndex == 2){
+                en.style.display = "";
+                jpn.style.display = "none";
+
+            }else{
+                jpn.style.display = "";
+                en.style.display = "";
+            }
+            console.log(a.selectedIndex);
+        }
+    </script>
+</body>
+</html>
