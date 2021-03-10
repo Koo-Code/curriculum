@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="入力してください">
+    <input type="button" value="追加" onclick="addText()">
+    <input type="button" value="削除" onclick="deleteText()">
+    <br>
+    <textarea readonly id="area1" cols="50" rows="8" placeholder="ここに出力されます"></textarea>
+
+    <script>
+        function addText(){
+            let text = document.getElementById('text1').value;
+            document.getElementById('area1').value += text + "\n";
+        }
+
+        function deleteText(){
+            document.getElementById('area1').value = null;
+            document.getElementById('text1').value = null;
+        }
+    </script>
+</body>
+</html>
